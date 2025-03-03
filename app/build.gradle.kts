@@ -50,6 +50,9 @@ dependencies {
     implementation(libs.androidx.ui.graphics)
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
+    implementation(libs.androidx.navigation.runtime.ktx)
+    implementation(libs.androidx.navigation.compose)
+    implementation(libs.androidx.tools.core)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
@@ -60,4 +63,5 @@ dependencies {
     implementation(libs.retrofit) // Retrofit 核心库
     implementation(libs.converter.gson) // Gson 解析 JSON
     implementation(libs.kotlinx.coroutines.android) // Kotlin 协程
+    implementation(libs.androidx.lifecycle.viewmodel.compose)
 }

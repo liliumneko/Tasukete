@@ -1,4 +1,4 @@
-package com.example.myapplication.ui.theme
+package com.example.myapplication.ui.alarm
 import android.content.BroadcastReceiver
 import android.content.Context
 import android.content.Intent

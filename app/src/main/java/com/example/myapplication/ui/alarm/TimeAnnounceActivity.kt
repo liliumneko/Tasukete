@@ -1,4 +1,4 @@
-package com.example.myapplication.ui.theme
+package com.example.myapplication.ui.alarm
 import android.app.Activity
 import android.media.MediaPlayer
 import android.os.Bundle
@@ -25,6 +25,7 @@ class TimeAnnounceActivity : Activity() {
         hideSystemUI()
 
         requestWindowFeature(Window.FEATURE_NO_TITLE)
+        @Suppress("DEPRECATION")
         window.setFlags(
             WindowManager.LayoutParams.FLAG_FULLSCREEN,
             WindowManager.LayoutParams.FLAG_FULLSCREEN
@@ -106,7 +107,7 @@ class TimeAnnounceActivity : Activity() {
         }
         mediaPlayer?.start()
     }
-
+    @Suppress("DEPRECATION")
     private fun hideSystemUI() {
         window.decorView.systemUiVisibility = (
                 View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY
